@@ -38,11 +38,11 @@ public class HomePage extends MasterPage {
 	}
 
 	public void clickMenuItem(String menuItem) {
-		DynamicXpathUtil.getWebElementWithDynamicXpath(driver, menuXpath, menuItem).click();
+		DynamicXpathUtil.getWebElement(driver, menuXpath, menuItem).click();
 	}
 
 	public void selectFromAccount(String option) {
-		DynamicXpathUtil.getWebElementWithDynamicXpath(driver, accountOptionsXpath, option).click();
+		DynamicXpathUtil.getWebElement(driver, accountOptionsXpath, option).click();
 	}
 
 }

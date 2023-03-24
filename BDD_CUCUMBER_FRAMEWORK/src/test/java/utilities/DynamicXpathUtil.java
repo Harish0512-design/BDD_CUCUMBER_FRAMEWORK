@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public final class DynamicXpathUtil {
 
-	public static WebElement getWebElementWithDynamicXpath(WebDriver driver, String xpathValue, String textToReplace) {
+	public static WebElement getWebElement(WebDriver driver, String xpathValue, String textToReplace) {
 		return driver.findElement(By.xpath(xpathValue.replace("$replaceable$", textToReplace)));
 	}
 }

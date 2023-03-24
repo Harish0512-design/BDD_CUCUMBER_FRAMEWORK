@@ -227,3 +227,42 @@
 [INFO ]2023-03-23 11:15:11:881[pool-1-thread-2]LogHelper-Sony Xperia clicked. from products list
 [INFO ]2023-03-23 11:15:12:231[pool-1-thread-2]LogHelper-Page title verified successfully.
 [INFO ]2023-03-23 11:15:12:545[pool-1-thread-2]LogHelper-Price in details page matches with price in list page
+[INFO ]2023-03-24 15:52:31:409[pool-1-thread-2]LogHelper-Application launched.
+[INFO ]2023-03-24 15:52:31:409[pool-1-thread-3]LogHelper-Application launched.
+[INFO ]2023-03-24 15:52:31:409[pool-1-thread-1]LogHelper-Application launched.
+[INFO ]2023-03-24 15:52:31:659[pool-1-thread-2]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:52:33:153[pool-1-thread-3]LogHelper-Home page: Mobile menu clicked.
+[INFO ]2023-03-24 15:52:33:268[pool-1-thread-2]LogHelper-Home page: Mobile menu clicked.
+[INFO ]2023-03-24 15:52:33:481[pool-1-thread-1]LogHelper-Home page: Mobile menu clicked.
+[INFO ]2023-03-24 15:52:33:569[pool-1-thread-3]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:52:33:858[pool-1-thread-3]LogHelper-Product price is list page is stored.
+[INFO ]2023-03-24 15:52:33:931[pool-1-thread-2]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:52:35:101[pool-1-thread-2]LogHelper-Product list page:- Name selected from upper sortby
+[INFO ]2023-03-24 15:52:35:745[pool-1-thread-2]LogHelper-product list page:- screenshot to check ascending order is taken
+[INFO ]2023-03-24 15:52:38:222[pool-1-thread-3]LogHelper-IPhone clicked. from products list
+[INFO ]2023-03-24 15:52:38:648[pool-1-thread-3]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:52:38:924[pool-1-thread-3]LogHelper-Price in details page matches with price in list page
+[INFO ]2023-03-24 15:52:41:700[pool-1-thread-2]LogHelper-Application launched.
+[INFO ]2023-03-24 15:52:41:880[pool-1-thread-2]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:52:43:712[pool-1-thread-2]LogHelper-Home page: Mobile menu clicked.
+[INFO ]2023-03-24 15:52:44:159[pool-1-thread-2]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:52:45:309[pool-1-thread-2]LogHelper-product list page:- Name selected from lower sortby
+[INFO ]2023-03-24 15:52:45:317[pool-1-thread-3]LogHelper-Application launched.
+[INFO ]2023-03-24 15:52:45:790[pool-1-thread-2]LogHelper-product list page:- screenshot to check ascending order is taken
+[INFO ]2023-03-24 15:52:48:006[pool-1-thread-3]LogHelper-Home page: Mobile menu clicked.
+[INFO ]2023-03-24 15:52:48:444[pool-1-thread-3]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:52:48:721[pool-1-thread-3]LogHelper-Product price is list page is stored.
+[INFO ]2023-03-24 15:52:59:069[pool-1-thread-3]LogHelper-Samsung Galaxy clicked. from products list
+[INFO ]2023-03-24 15:52:59:670[pool-1-thread-3]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:53:00:078[pool-1-thread-3]LogHelper-Price in details page matches with price in list page
+[INFO ]2023-03-24 15:53:07:156[pool-1-thread-3]LogHelper-Application launched.
+[INFO ]2023-03-24 15:53:11:987[pool-1-thread-3]LogHelper-Home page: Mobile menu clicked.
+[INFO ]2023-03-24 15:53:12:256[pool-1-thread-3]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:53:12:532[pool-1-thread-3]LogHelper-Product price is list page is stored.
+[INFO ]2023-03-24 15:53:16:991[pool-1-thread-3]LogHelper-Sony Xperia clicked. from products list
+[INFO ]2023-03-24 15:53:17:427[pool-1-thread-3]LogHelper-Page title verified successfully.
+[INFO ]2023-03-24 15:53:17:743[pool-1-thread-3]LogHelper-Price in details page matches with price in list page
+[INFO ]2023-03-24 15:53:26:562[pool-1-thread-1]LogHelper-Application launched.
+[INFO ]2023-03-24 15:53:30:104[pool-1-thread-1]LogHelper-Home page: Mobile menu clicked.
+[INFO ]2023-03-24 15:54:26:713[pool-1-thread-1]LogHelper-Application launched.
+[INFO ]2023-03-24 15:54:29:905[pool-1-thread-1]LogHelper-Home page: Mobile menu clicked.

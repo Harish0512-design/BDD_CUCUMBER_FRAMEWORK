@@ -53,4 +53,8 @@ public class ProductListPageSteps {
 		LogHelper.info(productName + " clicked. from products list");
 	}
 
+	@And("user clicks on ADDTOCART for {string}")
+	public void userClickOnAddToCart(String mobileName) {
+		productListPage.clickAddToCart(mobileName);
+	}
 }
