@@ -11,19 +11,23 @@ public class ProductListPage extends MasterPage {
 
 	public ProductListPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 
 	// dynamic XPath
 
 	private String productNameXpath = "//a[text()='$replaceable$']";
 	private String priceInListXpath = "//a[text()='$replaceable$']/../following-sibling::div[@class='price-box']//span[@class='price' and not(contains(@id,'old-price'))]";
+	private String addToCartXpath = "//button[@title='Add to Cart']/../preceding::h2/a[@title='$replaceable$']";
+	private String addToCompareXpath = "//a[text()='Add to Compare']/../../../../h2/a[text()='$replaceable$']";
 
 	@FindBy(xpath = "//div[@class='category-products']/div[@class='toolbar']//select[@title='Sort By']")
 	private WebElement upperSortBy;
 
 	@FindBy(xpath = "//div[@class='category-products']/div[@class='toolbar-bottom']//select[@title='Sort By']")
 	private WebElement lowerSortBy;
+
+	@FindBy(xpath = "//button[@title='Compare']")
+	private WebElement compareBtn;
 
 	// Action methods
 
@@ -36,10 +40,22 @@ public class ProductListPage extends MasterPage {
 	}
 
 	public void clickOnProductNameLink(String productName) {
-		DynamicXpathUtil.getWebElementWithDynamicXpath(driver, productNameXpath, productName).click();
+		DynamicXpathUtil.getWebElement(driver, productNameXpath, productName).click();
 	}
 
 	public String getPrice(String productName) {
-		return DynamicXpathUtil.getWebElementWithDynamicXpath(driver, priceInListXpath, productName).getText();
+		return DynamicXpathUtil.getWebElement(driver, priceInListXpath, productName).getText();
+	}
+
+	public void clickAddToCart(String mobileName) {
+		DynamicXpathUtil.getWebElement(driver, addToCartXpath, mobileName).click();
+	}
+
+	public void clickAddToCompare(String mobileName) {
+		DynamicXpathUtil.getWebElement(driver, addToCompareXpath, mobileName).click();
+	}
+
+	public void clickCompareBtn() {
+		compareBtn.click();
 	}
 }
