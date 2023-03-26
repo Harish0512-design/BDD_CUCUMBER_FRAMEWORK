@@ -20,6 +20,7 @@ public class ProductListPage extends MasterPage {
 	private String priceInListXpath = "//a[text()='$replaceable$']/../following-sibling::div[@class='price-box']//span[@class='price' and not(contains(@id,'old-price'))]";
 	private String addToCartXpath = "//h2/a[@title='$replaceable$']/../following-sibling::div[@class='actions']/button[@title='Add to Cart']";
 	private String addToCompareXpath = "//a[@title='$replaceable$']/..//a[@class='link-compare']";
+	private String addToWishListXpath = "//h2[@class='product-name']/a[text()='$replaceable$']/../following-sibling::div[@class='actions']//a[text()='Add to Wishlist']";
 
 	@FindBy(xpath = "//div[@class='category-products']/div[@class='toolbar']//select[@title='Sort By']")
 	private WebElement upperSortBy;
@@ -48,8 +49,8 @@ public class ProductListPage extends MasterPage {
 		return DynamicXpathUtil.getWebElement(driver, priceInListXpath, productName).getText();
 	}
 
-	public void clickAddToCart(String mobileName) {
-		DynamicXpathUtil.getWebElement(driver, addToCartXpath, mobileName).click();
+	public void clickAddToCart(String productName) {
+		DynamicXpathUtil.getWebElement(driver, addToCartXpath, productName).click();
 	}
 
 	public void clickAddToCompare(String mobileName) {
@@ -61,5 +62,11 @@ public class ProductListPage extends MasterPage {
 	public void clickCompareBtn() {
 		WaitHelper.waitUntilElementIsClickable(driver, compareBtn, 30);
 		compareBtn.click();
+	}
+
+	public void clickAddToWishlist(String productName) {
+		WebElement product = DynamicXpathUtil.getWebElement(driver, addToWishListXpath, productName);
+		WaitHelper.waitUntilElementIsClickable(driver, product, 30);
+		product.click();
 	}
 }

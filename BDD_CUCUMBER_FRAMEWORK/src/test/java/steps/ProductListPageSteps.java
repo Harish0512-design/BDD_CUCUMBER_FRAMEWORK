@@ -69,4 +69,9 @@ public class ProductListPageSteps {
 	public void userClickOnCompareButton() {
 		productListPage.clickCompareBtn();
 	}
+	
+	@And("user selects {string} to the wishlist")
+	public void addProductToWishList(String product) {
+		productListPage.clickAddToWishlist(product);
+	}
 }

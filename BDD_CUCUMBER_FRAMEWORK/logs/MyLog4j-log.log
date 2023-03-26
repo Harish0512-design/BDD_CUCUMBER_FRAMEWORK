@@ -423,3 +423,8 @@
 [INFO ]2023-03-25 14:08:25:251[pool-1-thread-1]LogHelper-Home page: TV menu clicked.
 [INFO ]2023-03-25 14:08:30:899[pool-1-thread-1]LogHelper-Pass- Error msg verified
 [INFO ]2023-03-25 14:08:32:705[pool-1-thread-1]LogHelper-Pass- Shopping Empty Cart msg verified
+[INFO ]2023-03-26 19:14:41:126[main]LogHelper-Application launched.
+[INFO ]2023-03-26 19:14:43:098[main]LogHelper-Page title verified successfully.
+[INFO ]2023-03-26 19:14:46:827[main]LogHelper-Success msg verified - Pass
+[INFO ]2023-03-26 19:14:48:352[main]LogHelper-Home page: TV menu clicked.
+[INFO ]2023-03-26 19:15:10:969[main]LogHelper-Pass- Success message verified - Your Wishlist has been shared.
