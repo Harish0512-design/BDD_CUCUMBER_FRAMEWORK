@@ -13,10 +13,11 @@ import io.cucumber.junit.CucumberOptions;
 				"json:target/cucumber.json"},
 		monochrome=true,
 		dryRun = false,
-		tags="@REGRESSION" 
-		//tags = "@REGRESSION AND @SANITY"
-		//tags = "@REGRESSION OR @SANITY"
+//		tags="@REGRESSION" 
+//		tags = "@REGRESSION AND @SANITY"
+//		tags = "@REGRESSION OR @SANITY"
 		//tags = "not @REGRESSION"
+		tags="@SANITY"
 		
 		)
 public class TestRunner {
