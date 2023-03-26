@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import utilities.DynamicXpathUtil;
+import utilities.WaitHelper;
 
 public class ProductListPage extends MasterPage {
 
@@ -17,8 +18,8 @@ public class ProductListPage extends MasterPage {
 
 	private String productNameXpath = "//a[text()='$replaceable$']";
 	private String priceInListXpath = "//a[text()='$replaceable$']/../following-sibling::div[@class='price-box']//span[@class='price' and not(contains(@id,'old-price'))]";
-	private String addToCartXpath = "//button[@title='Add to Cart']/../preceding::h2/a[@title='$replaceable$']";
-	private String addToCompareXpath = "//a[text()='Add to Compare']/../../../../h2/a[text()='$replaceable$']";
+	private String addToCartXpath = "//h2/a[@title='$replaceable$']/../following-sibling::div[@class='actions']/button[@title='Add to Cart']";
+	private String addToCompareXpath = "//a[@title='$replaceable$']/..//a[@class='link-compare']";
 
 	@FindBy(xpath = "//div[@class='category-products']/div[@class='toolbar']//select[@title='Sort By']")
 	private WebElement upperSortBy;
@@ -52,10 +53,13 @@ public class ProductListPage extends MasterPage {
 	}
 
 	public void clickAddToCompare(String mobileName) {
-		DynamicXpathUtil.getWebElement(driver, addToCompareXpath, mobileName).click();
+		WebElement product = DynamicXpathUtil.getWebElement(driver, addToCompareXpath, mobileName);
+		WaitHelper.waitUntilElementIsClickable(driver, product, 30);
+		product.click();
 	}
 
 	public void clickCompareBtn() {
+		WaitHelper.waitUntilElementIsClickable(driver, compareBtn, 30);
 		compareBtn.click();
 	}
 }
