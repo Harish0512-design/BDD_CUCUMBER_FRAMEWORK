@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/test/resources/features"},
 		glue = {"steps"},
 		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-				"json:target/cucumber.json"},
+				"json:cucumber.json"},
 		monochrome=true,
 		dryRun = false,
 		tags="@REGRESSION"
