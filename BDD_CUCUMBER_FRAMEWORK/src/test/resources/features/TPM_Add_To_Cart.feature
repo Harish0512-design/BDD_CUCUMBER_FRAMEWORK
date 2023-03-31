@@ -1,8 +1,10 @@
+@ADDTOCART
 Feature: Add to cart feature
   
   As a user I want to add product to the cart so that I can update the quanity,
   see the total price, apply discount and buy the product
 
+  @REGRESSION
   Scenario Outline: Verify user cannot add more product to cart than it is available in store
     Given user launched the application
     When user clicks on "<MenuItem>" menu
@@ -16,4 +18,4 @@ Feature: Add to cart feature
       | MenuItem | Product     | ErrorMessage                                                  |
       | Mobile   | IPhone      | Some of the products cannot be ordered in requested quantity. |
       | Mobile   | Sony Xperia | The requested quantity for Sony Xperia is not available.      |
-      | Mobile   | LG LCD      | Some of the products cannot be ordered in requested quantity. |
+      | TV       | LG LCD      | Some of the products cannot be ordered in requested quantity. |

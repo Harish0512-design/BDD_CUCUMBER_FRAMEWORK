@@ -22,4 +22,14 @@ public class HomePageSteps {
 		LogHelper.info("Home page: " + menuItem + " menu clicked.");
 	}
 
+	@When("user clicks on ACCOUNT")
+	public void clickAccount() {
+		homepage.clickAccount();
+	}
+
+	@When("user selects {string}")
+	public void selectRegister(String registerLink) {
+		homepage.selectFromAccount(registerLink);
+	}
+
 }

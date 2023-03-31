@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import pages.GeneralActions;
 import pages.ProductListPage;
 import utilities.LogHelper;
+import utilities.WaitHelper;
 
 public class ProductListPageSteps {
 
@@ -53,4 +54,24 @@ public class ProductListPageSteps {
 		LogHelper.info(productName + " clicked. from products list");
 	}
 
+	@And("user clicks on ADDTOCART for {string}")
+	public void userClickOnAddToCart(String productName) {
+		productListPage.clickAddToCart(productName);
+	}
+	
+	@When("user clicks on Add to Compare button for products {string},{string}")
+	public void clickOnAddToCompareButton(String product1, String product2) {
+		productListPage.clickAddToCompare(product1);
+		productListPage.clickAddToCompare(product2);
+	}
+	
+	@Then("user clicks on COMPARE button")
+	public void userClickOnCompareButton() {
+		productListPage.clickCompareBtn();
+	}
+	
+	@And("user selects {string} to the wishlist")
+	public void addProductToWishList(String product) {
+		productListPage.clickAddToWishlist(product);
+	}
 }
